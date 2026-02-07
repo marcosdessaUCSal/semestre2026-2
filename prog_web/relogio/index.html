@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="topo">
+            <span class="titulo">Relógio analógico</span>
+            <a href="../home/exercicios.html" class="botao-retornar">RETORNAR</a>
+        </div>
+
+        <canvas id="canvas" width="500" height="500"></canvas>
+
+    </div>
+    <div class="mini-painel-current">
+        <div class="display-current">
+            <span id="hora-atual" class="numero">00:00:00</span>
+        </div>
+    </div>
+
+    <div class="painel-container">
+        <div class="painel">
+            <button onclick="atrasar()" class="btn">ATRASAR</button>
+            <div class="display">
+                <span id="adiantamento" class="numero">000</span>
+                min
+            </div>
+            <button onclick="adiantar()" class="btn">ADIANTAR</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

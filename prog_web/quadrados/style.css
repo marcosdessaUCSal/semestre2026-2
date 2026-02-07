@@ -1,0 +1,55 @@
+canvas {
+    /* border: 8px solid #ffa500;
+    border-radius: 10px;
+    box-shadow: 10px 10px  darkgray;
+    background-color: darkslategray; */
+    border: 6px solid darkorange;
+    box-shadow: 0px 16px 16px 0px gray;
+    background-color: darkslategray;
+}
+
+body {
+    text-align: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.container {
+    text-align: center;
+}
+
+.titulo {
+    color: darkslategrey;
+    font-weight: bolder;
+    font-size: x-large;
+    margin-right: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0px 6px 6px 0px gray;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(220, 200, 162);
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.topo {
+    margin: 20px;
+}
+
+.botao-retornar {
+    background-color: orange;
+    color: darkslategray;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 6px;
+    border: 2px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    box-shadow: 0px 6px 6px 0px gray;
+}
+
+.botao-retornar:hover {
+    background-color: darkslategray;
+    color: orange;
+}

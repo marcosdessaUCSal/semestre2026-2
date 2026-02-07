@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="topo">
+        <span class="titulo">Jogo dos 15</span>
+        <a href="../home/exercicios.html" class="botao-retornar">RETORNAR</a>
+    </div>
+
+    <div class="cont-maior" id="container-marior">
+
+        <canvas id="canvas-maior" hidden></canvas>
+
+        <div class="duas-colunas">
+            <div class="container-esq">
+                <canvas id="canvas" class="canvas" width="300" height="370"></canvas>
+            </div>
+
+            <div class="container-dir">
+                <div class="btn" id="iniciar" onclick="btnIniciar()">
+                    INICIAR
+                </div>
+                <hr>
+                <div class="linha">
+                    <div class="rotulo">NÍVEL</div>
+                    <div class="dropdown">
+                        <button id="btn-nivel" class="dropbtn">MÉDIO</button>
+                        <div class="dropdown-content">
+                            <div class="item" onclick="selecionaNivel(0)">NENÉM</div>
+                            <div class="item" onclick="selecionaNivel(1)">MÉDIO</div>
+                            <div class="item" onclick="selecionaNivel(2)">INSANO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="rotulo">VEL.</div>
+                    <div class="dropdown">
+                        <button id="btn-vel" class="dropbtn">LESMA</button>
+                        <div class="dropdown-content">
+                            <div class="item" onclick="selecionaVel(0)">LESMA</div>
+                            <div class="item" onclick="selecionaVel(1)">NORMAL</div>
+                            <div class="item" onclick="selecionaVel(2)">DA LUZ</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="rotulo">AUX.</div>
+                    <div class="dropdown">
+                        <button id="btn-aux" class="dropbtn">NADA</button>
+                        <div class="dropdown-content">
+                            <div class="item" onclick="selecionaAux(0)">NADA</div>
+                            <div class="item" onclick="selecionaAux(1)">RETÂNGULO</div>
+                            <div class="item" onclick="selecionaAux(2)">CÍRCULO</div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <canvas id="canvas-mini" width="120" height="120"></canvas>
+            </div>
+        </div>
+
+        <seciton class="container-disciplina">
+
+            <!-- AVISO -->
+            <article class="unidade">
+                <p>
+                    Este exemplo foi feito há um ou dois anos. Está incompleto e
+                    contém um bug relacionado a dimensionamento de tela. [As animações
+                    ficam incorretas depois de redimensionar o navegador.] Só Deus sabe
+                    quando eu vou corrigir isso...
+                </p>
+            </article>
+        </seciton>
+
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

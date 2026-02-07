@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="topo">
+            <span class="titulo">Notas das Turmas</span>
+            <a href="../home/exercicios.html" class="botao-retornar">RETORNAR</a>
+        </div>
+
+        <canvas id="canvas" width="700" height="450"></canvas>
+
+        <div id="tooltip"></div>
+
+    </div>
+
+    <!-- <div class="painel container"> -->
+    <div class="painel">
+        <p>Selecione a turma</p>
+        
+        <select name="turmas" id="dropbox" onchange="modificarTurma()" class="select-turma">
+            <optgroup label="Prof. John von Neumann">
+                <option value="1">Turma 1</option>
+            </optgroup>
+            <optgroup label="Prof. Tim Berners-Lee">
+                <option value="2">Turma 2</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <!-- </div> -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
